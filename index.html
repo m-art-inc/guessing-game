@@ -6,10 +6,12 @@
 
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <h1>Hello World! - Welcome to my Guessing Game!</h1>
   <h3>My name is Martin Carmen</h3>
-  <p>I am a recent graduate from Portland State University with a <acronym title="Bachelor of Arts">BA</acronym> in Art Practices and Graphic Design and</br>I'm currently enrolled at CodeFellows to become a Web developer. I have been learning <em>HTML</em> and <em>CSS</em> on my own time</br> and I'm excited to learn more about <em>Javascript</em> to add interactivity to Web applications and Websites.</p>
-
+  <p>
+    I am a recent graduate from Portland State University with a <acronym title="Bachelor of Arts">BA</acronym> in Art Practices and Graphic Design and I'm currently enrolled at CodeFellows to become a Web developer. I have been learning <em>HTML</em> and <em>CSS</em> on my own time and I'm excited to learn more about <em>Javascript</em> to add interactivity to Web applications and Websites. On my freetime, I enjoy playing with my dog Luna and my two cats Henry and Sofie.
+  </p>
+  <br/>
   <!--Lists Start-->
   <ul><h3>Experience</h3>
     <li>Freelancing</li>
@@ -26,5 +28,56 @@
     <li>Get a job</li>
   </ul>
   <!--Lists End-->
+  <br/>
+  <h2>
+    Please guess the next 3 questions using numbers only.
+  </h2>
+  <br/>
+
+  <h2>User Answers:</h2>
+
+
+  <!--Script Start-->
+    <script type="text/javascript">
+					console.log("Starting Script. Asking user for information.");
+				var userName = prompt("What's Your Name?","");
+					console.log("User Name: "+userName);
+				var message = "Hello "+userName+"!";
+					console.log("Message: "+message);
+				var askUser = prompt("Are you ready to play a guessing game?")
+          console.log("Asking user if he/she is ready to play");
+
+          console.log("Displaying user's answers");
+				var guessOne = prompt("How Old Am I?");
+				if (guessOne == 28){
+					console.log("User guess was correct. Your guess was "+guessOne);
+          document.write("<p>Question (1) Correct, your guess was "+guessOne+",</P>")
+				} else{
+					console.log("User guess was incorrect. "+guessOne);
+          document.write("<p>Question (1) Incorrect, your guess was "+guessOne+", <p/>");
+				}
+
+        var guessTwo = prompt("How many cats do I have?");
+				if (guessTwo == 2){
+					console.log("User guess was correct. Your guess was "+guessTwo);
+          document.write("<p>Question (2) Correct, your guess was "+guessTwo+", </p>")
+				} else{
+					console.log("User guess was incorrect. "+guessTwo);
+          document.write("<p> Question (2) Incorrect, your guess was "+guessTwo+", </p>");
+				}
+
+        var guessThree = prompt("How many dogs do I have?");
+				if (guessThree == 1){
+					console.log("User guess was correct. Your guess was "+guessThree);
+          document.write("<p>Question (3) Correct, your guess was "+guessThree+".</p>")
+				} else{
+					console.log("User guess was incorrect. "+guessThree);
+          document.write("<p>Question (3) Incorrect, your guess was "+guessThree+".</p>");
+				}
+
+        var userName = prompt("Thanks for Playing my Guessing Game!");
+		</script>
+    <!--Script End-->
+
 </body>
 </html>
