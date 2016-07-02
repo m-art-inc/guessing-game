@@ -31,24 +31,28 @@
     <br/>
     <!--Lists Start-->
     <ul>
-      <li>(1) Do I own a dog?</li>
-      <li>(2) Did I grow up in Oregon?</li>
-      <li>(3) Do I speak more than one language?</li>
+      <li>Do I own a dog?</li>
+      <li>Did I grow up in Oregon?</li>
+      <li>Do I speak more than one language?</li>
+    </ul>
+    <br/>
+    <h2>Bonus Question:</h2>
+    <br/>
+    <ul>
+      <li>How Old Am I?</li>
     </ul>
     <!--Lists End-->
-
+    <br/>
+    <br/>
 
     <h2>User Answers:</h2>
   <!--Script Start-->
     <script type="text/javascript">
-
 					console.log("Starting Script. Asking user for information.");
 				var userName = prompt("What's Your Name?","");
 					console.log("User Name: "+userName);
 				var message = "Hello "+userName+"!";
 					console.log("Message: "+message);
-
-
 
 				var guessOne = prompt("Do I own a dog?");
             console.log("Question (1)");
@@ -79,14 +83,28 @@
 				if (guessThree == "yes"){
           alert(userName +". You are right! I speak English and Spanish!");
   					console.log("User guess was correct.");
-            document.write("<p style=color:green;>Question (3) Correct, your guess was "+guessThree+".</p>")
+            document.write("<p style=color:green;>Question (3) Correct, your guess was "+guessThree+".</p>");
 				} else{
           alert(userName +". It's true! I speak English and Spanish!");
   					console.log("User guess was incorrect.");
             document.write("<p style=color:red;>Question (3) Incorrect, your guess was "+guessThree+".</p>");
 				}
 
-
+        var guessFour = prompt("What Is My Favorite Number? - (between 1 - 10)");
+            console.log("Question (Bonus)");
+        if (guessFour == 3){
+            console.log("User guess was correct.");
+            document.write("<p style=color:green;>Bonus Question (4) Correct, your guess was "+guessFour+".</p>");
+        }
+        if (guessFour > 4){
+            guessFour = prompt("Your guess is too high!");
+            console.log("User guess was too high!");
+            document.write("<p>Question (4) Your guess was too high!.</p>");
+        } else if (guessFour < 3){
+            guessFour = prompt("Your guess is too low!");
+            console.log("User guess was too low!");
+            document.write("<p>Question (4) Your guess was too low!.</p>");
+        }
 		</script>
     <!--Script End-->
 
