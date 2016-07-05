@@ -4,54 +4,70 @@ console.log("User Name: "+userName);
 var message = "Hello "+userName+"!";
 console.log("Message: "+message);
 
-var guessOne = prompt("Do I own a dog?");
-  console.log("Question (1)");
-if (guessOne.toLowerCase() == "yes"){
+var question = prompt("Do I own a dog?");
+if (question.toLowerCase() == "yes"){
 alert("Yes, "+ userName +". In fact her name is Luna and she is 3 years old!");
-  console.log("User guess was correct. Your guess was "+guessOne);
-  document.write("<p style=color:green;>Question (1) Correct, your guess was "+guessOne+",</P>");
+  console.log("Question (1) User guess was correct. Your guess was "+question);
+  document.write("<p style=color:green;>Question (1) Correct, your guess was "+question+",</P>");
 } else{
 alert("Sorry, "+ userName +" it's true, I own a dog");
-  console.log("User guess was incorrect. "+guessOne);
-  document.write("<p style=color:red;>Question (1) Incorrect, your guess was "+guessOne+", <p/>");
+  console.log("Question (1) User guess was incorrect. ");
+  document.write("<p style=color:red;>Question (1) Incorrect, your guess was "+question+", <p/>");
 }
 
-var guessTwo = prompt("Did I grow up in Oregon?");
-  console.log("Question (2)");
-if (guessTwo.toLowerCase() == "no"){
+var question = prompt("Did I grow up in Oregon?");
+if (question.toLowerCase() == "no"){
 alert(userName +". You are right! I did NOT grow up in Oregon");
-  console.log("User guess was correct.");
-  document.write("<p style=color:green;>Question (2) Correct, your guess was "+guessTwo+", </p>");
+  console.log("Question (2) User guess was correct.");
+  document.write("<p style=color:green;>Question (2) Correct, your guess was "+question+", </p>");
 } else{
 alert("Sorry, "+ userName +" I did NOT grow up in Oregon.");
-  console.log("User guess was incorrect.");
-  document.write("<p style=color:red;> Question (2) Incorrect, your guess was "+guessTwo+", </p>");
+  console.log("Question (2) User guess was incorrect.");
+  document.write("<p style=color:red;> Question (2) Incorrect, your guess was "+question+", </p>");
 }
 
-var guessThree = prompt("Do I speak more than one language?");
-  console.log("Question (3)");
-if (guessThree.toLowerCase() == "yes"){
+var question = prompt("Do I speak more than one language?");
+if (question.toLowerCase() == "yes"){
 alert(userName +". You are right! I speak English and Spanish!");
-  console.log("User guess was correct.");
-  document.write("<p style=color:green;>Question (3) Correct, your guess was "+guessThree+".</p>");
+  console.log("Question (3) User guess was correct.");
+  document.write("<p style=color:green;>Question (3) Correct, your guess was "+question+".</p>");
 } else{
 alert(userName +". It's true! I speak English and Spanish!");
-  console.log("User guess was incorrect.");
-  document.write("<p style=color:red;>Question (3) Incorrect, your guess was "+guessThree+".</p>");
+  console.log("Question (3) User guess was incorrect.");
+  document.write("<p style=color:red;>Question (3) Incorrect, your guess was "+question+".</p>");
 }
 
-var guess = prompt("What Is My Favorite Number? - (between 1 - 15)");
-  console.log("Question (Bonus)");
-if (guess == 3){
-  console.log("User guess was correct.");
-  document.write("<p style=color:green;>Bonus Question (4) Correct, your guess was "+guessFour+".</p>");
+var question = prompt("How Old Am I?");
+if (question == 28){
+alert(userName +". You are right! I am getting old!");
+  console.log("Question (4) User guess was correct.");
+  document.write("<p style=color:green;>Question (4) Correct, your guess was "+question+".</p>");
+} else{
+alert(userName +". Sorry! I am 28 years old!");
+  console.log("Question (4) User guess was incorrect.");
+  document.write("<p style=color:red;>Question (4) Incorrect, your guess was "+question+".</p>");
 }
-if (guess > 4){
-  guess = prompt("Your guess is too high!");
-  console.log("User guess was too high!");
-  document.write("<p>Question (4) Your guess was too high!.</p>");
-} else if (guess < 3){
-  guess = prompt("Your guess is too low!");
-  console.log("User guess was too low!");
-  document.write("<p>Question (4) Your guess was too low!.</p>");
+
+
+var x = 3;
+var counts = 15;
+var question = 'Whats my favorite number? 1-15!';
+while (counts > 0) {
+var guess = prompt(question +
+    '\nYou have ' + counts + ' guesses left.');
+if (!guess) break;
+guess = Number(guess);
+if (guess == x) {
+  prompt("Great job, You got it! My favorite number is "+x+".");
+  counts = 0;
+  console.log("Question (5) User guess was correct.");
+  document.write("<p style=color:green;>Question (5) Correct, your guess was "+x+".</p>");
+} else {
+  question = 'Nope.';
+if (guess < x) question += ' Too low, try again';
+if (guess > x) question += ' Too high, try again';
+  counts = counts - 1;
+  console.log("Question (5) User guess was incorrect.");
+  document.write("<p style=color:red;>Question (5) incorrect, your guess was "+x+".</p>");
+}
 }
