@@ -1,9 +1,30 @@
-body{
-  padding-left: 10%;
-  padding-right: 10%;
+
+.body_center{
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  border: 3px solid #004a80;
+  padding: 10px;
 }
 
-h1{
-  color: blue;
-  align-items: center;
+.main_header{
+  text-align: center;
+  color: #004a80;
+  }
+
+table{
+  width: 100%;
+  padding: 10%;
+  border: 1px solid #004a80;
+
+  }
+  td{
+  padding: 10px;
+  text-align: left;
+  border:1px solid #004a80;
+  }
+  th{
+  padding: 10px;
+  text-align: left;
+  border:2px solid #004a80;
   }
