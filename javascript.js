@@ -9,44 +9,44 @@ var question1 = prompt("Do I own a dog?");
 if (question1.toLowerCase() == "yes"){
 alert("Yes, "+ userName +". In fact her name is Luna and she is 3 years old!");
   console.log("Question (1) User guess was correct. Your guess was "+question1);
-  document.write("<p style=color:green;>Question (1) Correct, your guess was "+question1+",</P>");
+  document.getElementById("answer_one").style.backgroundColor = "green";
 } else{
 alert("Sorry, "+ userName +" it's true, I own a dog");
   console.log("Question (1) User guess was incorrect. ");
-  document.write("<p style=color:red;>Question (1) Incorrect, your guess was "+question1+", <p/>");
+  document.getElementById("answer_one").style.backgroundColor = "red";
 }
 //Question 2
 var question2 = prompt("Did I grow up in Oregon?");
 if (question2.toLowerCase() == "no"){
 alert(userName +". You are right! I did NOT grow up in Oregon");
   console.log("Question (2) User guess was correct.");
-  document.write("<p style=color:green;>Question (2) Correct, your guess was "+question2+", </p>");
+  document.getElementById("answer_two").style.backgroundColor = "green";
 } else{
 alert("Sorry, "+ userName +" I did NOT grow up in Oregon.");
   console.log("Question (2) User guess was incorrect.");
-  document.write("<p style=color:red;> Question (2) Incorrect, your guess was "+question2+", </p>");
+  document.getElementById("answer_two").style.backgroundColor = "red";
 }
 //Question 3
 var question3 = prompt("Do I speak more than one language?");
 if (question3.toLowerCase() == "yes"){
 alert(userName +". You are right! I speak English and Spanish!");
   console.log("Question (3) User guess was correct.");
-  document.write("<p style=color:green;>Question (3) Correct, your guess was "+question3+".</p>");
+  document.getElementById("answer_three").style.backgroundColor = "green";
 } else{
 alert(userName +". It's true! I speak English and Spanish!");
   console.log("Question (3) User guess was incorrect.");
-  document.write("<p style=color:red;>Question (3) Incorrect, your guess was "+question3+".</p>");
+  document.getElementById("answer_three").style.backgroundColor = "red";
 }
 //Question 4
 var question4 = prompt("How Old Am I?");
 if (question4 == 28){
 alert(userName +". You are right! I am getting old!");
   console.log("Question (4) User guess was correct.");
-  document.write("<p style=color:green;>Question (4) Correct, your guess was "+question4+".</p>");
+  document.getElementById("answer_four").style.backgroundColor = "green";
 } else{
 alert(userName +". Sorry! I am 28 years old!");
   console.log("Question (4) User guess was incorrect.");
-  document.write("<p style=color:red;>Question (4) Incorrect, your guess was "+question4+".</p>");
+  document.getElementById("answer_four").style.backgroundColor = "red";
 }
 //Question 5
 function numberGame () {
@@ -59,9 +59,9 @@ function numberGame () {
    if (guess == secretNumber) {
      alert("Great job, You got it! My favorite number is "+secretNumber+".");
      counts = 0;
-     document.write("<p style=color:green;>Question (5) Correct, your guess was "+secretNumber+".</p>");
-    var table_cell = document.getElementById("answer_five");
-     table_cell.innerHTML = guess;
+     document.getElementById("answer_five").style.backgroundColor = "green";
+   var table_cell = document.getElementById("answer_five");
+   table_cell.innerHTML = guess;
    } else if (guess > secretNumber){
      counts -= 1;
      alert('Your guess was too high, try again');
