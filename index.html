@@ -5,35 +5,50 @@
   <title>Guessing - Game | (N3)</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<div class="body_center">
+  <body>
+    <div class="main_header">
+      <h1>Welcome to my Guessing Game!</h1>
+      <br/>
+      <br/>
+      <br/>
+    </div>
 
-    <h1>Welcome to my Guessing Game!</h1>
-    <br/>
-    <br/>
-    <br/>
+    <table>
+      <h2>Please guess the next questions:</h2>
+      <th>Question</th>
+      <th>Answer</th>
+      <tr>
+        <td>(1) Do I own a dog?</td>
+        <td id="answer_one"></td>
+      </tr>
+      <tr>
+        <td>(2) Did I grow up in Oregon?</td>
+        <td id="answer_two"></td>
+      </tr>
+      <tr>
 
-    <h2>Please guess the next questions:</h2>
-    <br/>
-    <!--Lists Start-->
-    <ol>
-      <li>Do I own a dog?</li>
-      <li>Did I grow up in Oregon?</li>
-      <li>Do I speak more than one language?</li>
-      <li>How Old Am I?</li>
-      <li>What's My Favorite Number?</li>
-    </ol>
-    <!--Lists End-->
-    <br/>
-    <br/>
+        <td>(3) Do I speak more than one language?</td>
+        <td id="answer_three"></td>
+      </tr>
+      <tr>
 
-    <h2>User Answers:</h2>
+        <td>(4) How Old Am I?</td>
+        <td id="answer_four"></td>
+      </tr>
+      <tr>
+        <td>(5) What's My Favorite Number?</td>
+        <td id="answer_five"></td>
+      </tr>
+      </table>
+
   <!--Script Start-->
-    <script type="text/javascript" src="javascript.js">
+    <script type="text/javascript" src="javascript.js"></script>
 
-		</script>
-
-    <script>numberGame() </script>
+  <script>numberGame() </script>
+  <script>userAnswers() </script>
     <!--Script End-->
 
 </body>
+</div>
 </html>
