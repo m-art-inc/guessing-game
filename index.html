@@ -10,14 +10,12 @@
   <body>
     <div class="main_header">
       <img src="images/questionicon.svg" alt="main" />
+      <h1 class="name_header"><span id="name_slot"></span></h1>
       <h1>Welcome to my Guessing Game!</h1>
       <br/>
-      <h1 class="name_header"><span id="name_slot"></span></h1>
-      <br/>
     </div>
-
+    <h2>Please guess the next questions:</h2>
     <table>
-      <h2>Please guess the next questions:</h2>
       <th>Question</th>
       <th>User Answer</th>
       <tr>
@@ -43,7 +41,9 @@
         <td id="answer_five"></td>
       </tr>
       </table>
-
+    <div class="key">
+      <p><span id="green">Green</span> = Correct | <span id="red">Red</span> = incorrect</p>
+    </div>
   <!--Script Start-->
   <script type="text/javascript" src="javascript.js"></script>
     <script>visitorName()</script>
