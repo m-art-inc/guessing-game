@@ -1,52 +1,70 @@
 //Starting script...
-console.log("Starting Script. Asking user for information.");
-var userName = prompt("What's Your Name?",""); //Username
-console.log("User Name: "+userName);
-var message = "Hello "+userName+"!"; //Greeting
-console.log("Message: "+message);
+function visitorName() {
+  var userName = prompt("What's Your Name?",""); //Username
+  console.log("User Name: "+userName);
+  var message = "Hello "+userName+"!"; //Greeting
+  document.getElementById("name_slot").innerHTML = message;
+  console.log("Message: "+message);
+}
 //Question 1
-var question1 = prompt("Do I own a dog?");
-if (question1.toLowerCase() == "yes"){
-alert("Yes, "+ userName +". In fact her name is Luna and she is 3 years old!");
-  console.log("Question (1) User guess was correct. Your guess was "+question1);
-  document.getElementById("answer_one").style.backgroundColor = "#0F8517";
-} else{
-alert("Sorry, "+ userName +" it's true, I own a dog");
-  console.log("Question (1) User guess was incorrect. ");
-  document.getElementById("answer_one").style.backgroundColor = "#A91313";
+function qOne() {
+  var question1 = prompt("Do I own a dog?");
+  if (question1.toLowerCase() == "yes"){
+    console.log("Question (1) User guess was correct. Your guess was "+question1);
+    document.getElementById("answer_one").style.backgroundColor = "#0F8517";
+  var table_cell = document.getElementById("answer_one");
+  table_cell.innerHTML = question1;
+  } else{
+    var table_cell = document.getElementById("answer_one");
+    table_cell.innerHTML = question1;
+      console.log("Question (1) User guess was incorrect. ");
+      document.getElementById("answer_one").style.backgroundColor = "#A91313";
+  }
 }
 //Question 2
-var question2 = prompt("Did I grow up in Oregon?");
-if (question2.toLowerCase() == "no"){
-alert(userName +". You are right! I did NOT grow up in Oregon");
-  console.log("Question (2) User guess was correct.");
-  document.getElementById("answer_two").style.backgroundColor = "#0F8517";
-} else{
-alert("Sorry, "+ userName +" I did NOT grow up in Oregon.");
-  console.log("Question (2) User guess was incorrect.");
-  document.getElementById("answer_two").style.backgroundColor = "#A91313";
+function qTwo() {
+  var question2 = prompt("Did I grow up in Oregon?");
+  if (question2.toLowerCase() == "no"){
+    console.log("Question (2) User guess was correct.");
+    document.getElementById("answer_two").style.backgroundColor = "#0F8517";
+  var table_cell = document.getElementById("answer_two");
+  table_cell.innerHTML = question2;
+  } else{
+    var table_cell = document.getElementById("answer_two");
+    table_cell.innerHTML = question2;
+      console.log("Question (2) User guess was incorrect.");
+      document.getElementById("answer_two").style.backgroundColor = "#A91313";
+  }
 }
 //Question 3
-var question3 = prompt("Do I speak more than one language?");
-if (question3.toLowerCase() == "yes"){
-alert(userName +". You are right! I speak English and Spanish!");
-  console.log("Question (3) User guess was correct.");
-  document.getElementById("answer_three").style.backgroundColor = "#0F8517";
-} else{
-alert(userName +". It's true! I speak English and Spanish!");
-  console.log("Question (3) User guess was incorrect.");
-  document.getElementById("answer_three").style.backgroundColor = "#A91313";
+function qThree() {
+  var question3 = prompt("Do I speak more than one language?");
+  if (question3.toLowerCase() == "yes"){
+    console.log("Question (3) User guess was correct.");
+    document.getElementById("answer_three").style.backgroundColor = "#0F8517";
+  var table_cell = document.getElementById("answer_three");
+  table_cell.innerHTML = question3;
+  } else{
+    var table_cell = document.getElementById("answer_three");
+    table_cell.innerHTML = question3;
+      console.log("Question (3) User guess was incorrect.");
+      document.getElementById("answer_three").style.backgroundColor = "#A91313";
+  }
 }
 //Question 4
-var question4 = prompt("How Old Am I?");
-if (question4 == 28){
-alert(userName +". You are right! I am getting old!");
-  console.log("Question (4) User guess was correct.");
-  document.getElementById("answer_four").style.backgroundColor = "#0F8517";
-} else{
-alert(userName +". Sorry! I am 28 years old!");
-  console.log("Question (4) User guess was incorrect.");
-  document.getElementById("answer_four").style.backgroundColor = "#A91313";
+function qFour() {
+  var question4 = prompt("How Old Am I?");
+  if (question4 == 28){
+    console.log("Question (4) User guess was correct.");
+    document.getElementById("answer_four").style.backgroundColor = "#0F8517";
+  var table_cell = document.getElementById("answer_four");
+  table_cell.innerHTML = question4;
+  } else{
+    var table_cell = document.getElementById("answer_four");
+    table_cell.innerHTML = question4;
+      console.log("Question (4) User guess was incorrect.");
+      document.getElementById("answer_four").style.backgroundColor = "#A91313";
+  }
 }
 //Question 5
 function numberGame () {
@@ -73,20 +91,7 @@ function numberGame () {
      console.log("Question (5) User guess was incorrect. Try again");
    } else {
      alert('I am confused, Your guess was neither high or low, try again');
+     document.getElementById("answer_five").style.backgroundColor = "#F3CB00"
    }
  }
-}
-
-//Answers function
-function userAnswers() {
-  var table_cell = document.getElementById("answer_one");
-  table_cell.innerHTML = question1;
-  console.log(question1);
-  var table_cell = document.getElementById("answer_two");
-  table_cell.innerHTML = question2;
-  var table_cell = document.getElementById("answer_three");
-  table_cell.innerHTML = question3;
-  var table_cell = document.getElementById("answer_four");
-  table_cell.innerHTML = question4;
-
 }
