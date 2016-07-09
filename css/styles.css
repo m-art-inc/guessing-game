@@ -6,17 +6,17 @@ body{
 }
 
 h2{
-  padding-left: 30px;
+  text-align: center;
 }
 
 .main_header{
   font-family: 'Lobster', cursive;
   text-align: center;
-  color: #A91313;
+  color: #004a80;
   }
 .name_header{
     text-align: center;
-    color: #004a80;
+    color: #A91313
   }
 img{
   height: 150px;
@@ -35,7 +35,7 @@ td{
   border:1px solid #004a80;
   }
 th{
-  padding: 10px;
+  padding: 20px;
   text-align: left;
   border:2px solid #004a80;
   }
@@ -51,4 +51,13 @@ th{
 #answer_one, #answer_two, #answer_three, #answer_four, #answer_five{
   color: white;
   text-align: center;
+}
+.key{
+  text-align: center;
+}
+#green{
+  color: #0F8517;
+}
+#red{
+  color: #A91313;
 }
