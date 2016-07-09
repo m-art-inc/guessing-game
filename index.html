@@ -9,8 +9,8 @@
 <div class="body_center">
   <body>
     <div class="main_header">
+      <img src="images/questionicon.svg" alt="main" />
       <h1>Welcome to my Guessing Game!</h1>
-      <br/>
       <br/>
       <h1 class="name_header"><span id="name_slot"></span></h1>
       <br/>
@@ -19,7 +19,7 @@
     <table>
       <h2>Please guess the next questions:</h2>
       <th>Question</th>
-      <th>Answer</th>
+      <th>User Answer</th>
       <tr>
         <td>(1) Do I own a dog?</td>
         <td id="answer_one"></td>
@@ -31,7 +31,7 @@
       <tr>
 
         <td>(3) Do I speak more than one language?</td>
-        <td id="answer_three"></td>
+        <td id="answer_three" style="bold"></td>
       </tr>
       <tr>
 
@@ -45,10 +45,14 @@
       </table>
 
   <!--Script Start-->
-<!--    <script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+    <script>visitorName()</script>
+    <script>qOne()</script>
+    <script>qTwo()</script>
+    <script>qThree()</script>
+    <script>qFour()</script>
+    <script>numberGame() </script>
 
-  <script>numberGame() </script>
-  <script>userAnswers() </script>
   <!--Script End-->
 
 </body>
