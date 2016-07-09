@@ -1,10 +1,24 @@
+body{
+  background-color: #173271;
+  padding-top: 40px;
+  font-family: 'Josefin Slab', serif;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+}
+h2{
+  padding-left: 30px;
+}
 
 .body_center{
+  color: #004a80;
   margin: auto;
-  width: 90%;
+  background-color: #FFE8A4;
+  width: 75%;
   height: 90%;
   border: 3px solid #004a80;
-  padding: 10px;
+  padding-top: 50px;
 }
 
 .main_header{
@@ -15,7 +29,7 @@
 table{
   width: 100%;
   padding: 5%;
-  border: 1px solid #004a80;
+  border-top: 2px solid #004a80;
 
   }
   td{
