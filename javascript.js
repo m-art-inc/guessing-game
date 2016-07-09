@@ -1,7 +1,7 @@
 //Starting script...
 function visitorName() {
   var userName = prompt("What's Your Name?",""); //Username
-  console.log("User Name: "+userName);
+  console.log("Username: "+userName);
   var message = "Hello "+userName+"!"; //Greeting
   document.getElementById("name_slot").innerHTML = message;
   console.log("Message: "+message);
@@ -17,7 +17,7 @@ function qOne() {
   } else{
     var table_cell = document.getElementById("answer_one");
     table_cell.innerHTML = question1;
-      console.log("Question (1) User guess was incorrect. ");
+      console.log("Question (1) User guess was incorrect. Your guess was "+question1);
       document.getElementById("answer_one").style.backgroundColor = "#A91313";
   }
 }
