@@ -69,6 +69,7 @@ function qFour() {
 //Question 5
 function numberGame () {
  var secretNumber = 3;
+ var img = document.getElementById("prize_image");
  var counts = 15;
  var question5 = 'Whats my favorite number? 1-15!';
  while (counts > 0) {
@@ -77,7 +78,7 @@ function numberGame () {
    if (guess == secretNumber) {
      alert("Great job, You got it! My favorite number is "+secretNumber+".");
      counts = 0;
-     document.getElementById("answer_five").style.backgroundColor = "#0F8517";
+     document.getElementById("answer_five"+"").style.backgroundColor = "#0F8517";
    var table_cell = document.getElementById("answer_five");
    table_cell.innerHTML = guess;
    } else if (guess > secretNumber){
@@ -94,4 +95,9 @@ function numberGame () {
      document.getElementById("answer_five").style.backgroundColor = "#F3CB00"
    }
  }
+}
+//Image display fuction
+function displayImage() {
+  var img = document.getElementById('prize_image');
+    img.src = "images/winner.svg";
 }
