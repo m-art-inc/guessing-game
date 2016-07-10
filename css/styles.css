@@ -52,6 +52,16 @@ th{
   color: white;
   text-align: center;
 }
+
+.prize_display{
+  padding: 5%;
+}
+#prize_image{
+  display: block;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+}
 .key{
   text-align: center;
 }
