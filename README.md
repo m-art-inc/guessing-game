@@ -1,5 +1,5 @@
 # guessing-game
-This is branch class04 of my previous guessing game created using basic html and javascript to interact with the user.
+This is branch class05 of my previous guessing game created using basic html and javascript to interact with the user.
 
 ##Built at:
 Code Fellows PDX
