@@ -18,7 +18,7 @@ h2{
     text-align: center;
     color: #A91313
   }
-img{
+#header_image{
   height: 150px;
   width: 75px;
 }
@@ -42,7 +42,7 @@ th{
 .body_center{
   color: #004a80;
   margin: auto;
-  background-color: #FFE8A4;
+  background-color: #a3c2c2;
   width: 75%;
   height: 90%;
   border: 3px solid #004a80;
@@ -55,6 +55,7 @@ th{
 
 .prize_display{
   padding: 5%;
+  text-align: center;
 }
 #prize_image{
   display: block;
