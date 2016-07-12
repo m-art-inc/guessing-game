@@ -69,7 +69,6 @@ function qFour() {
 //Question 5
 function numberGame () {
  var secretNumber = 3;
- var img = document.getElementById("prize_image");
  var counts = 15;
  var question5 = 'Whats my favorite number? 1-15!';
  while (counts > 0) {
@@ -80,19 +79,25 @@ function numberGame () {
      counts = 0;
      document.getElementById("answer_five"+"").style.backgroundColor = "#0F8517";
    var table_cell = document.getElementById("answer_five");
-   table_cell.innerHTML = guess;
+    table_cell.innerHTML = guess;
    } else if (guess > secretNumber){
      counts -= 1;
-     alert('Your guess was too high, try again');
-     document.getElementById("answer_five").style.backgroundColor = "#F3CB00"
+     alert('Your guess was too high, try again ');
+     document.getElementById("answer_five").style.backgroundColor = "#F3CB00";
+  var table_cell = document.getElementById("answer_five");
+    table_cell.innerHTML = guess+" - Too High";
    } else if (guess < secretNumber) {
      counts -= 1;
-     alert('Your guess was too low, try again');
-     document.getElementById("answer_five").style.backgroundColor = "#F3CB00"
+     alert('Your guess was too low, try again ');
+     document.getElementById("answer_five").style.backgroundColor = "#F3CB00";
+  var table_cell = document.getElementById("answer_five");
+    table_cell.innerHTML = guess+" - Too Low";
      console.log("Question (5) User guess was incorrect. Try again");
    } else {
      alert('I am confused, Your guess was neither high or low, try again');
-     document.getElementById("answer_five").style.backgroundColor = "#F3CB00"
+     document.getElementById("answer_five").style.backgroundColor = "#F3CB00";
+  var table_cell = document.getElementById("answer_five");
+    table_cell.innerHTML = guess+" - ???";
    }
  }
 }
